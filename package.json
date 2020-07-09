@@ -1,0 +1,23 @@
+{
+  "name": "learn-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next build && next export",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@babel/core": "^7.10.4",
+    "date-fns": "^2.14.0",
+    "gray-matter": "^4.0.2",
+    "next": "9.4.4",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "remark": "^12.0.0",
+    "remark-highlight.js": "^6.0.0",
+    "remark-html": "^11.0.2",
+    "unified-stream": "^1.0.6"
+  }
+}
