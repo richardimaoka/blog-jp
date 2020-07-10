@@ -44,9 +44,8 @@ export default function Layout({ children, home }) {
                 className={utilStyles.biopic}
               />
               <p className={utilStyles.biodesc}>
-                Written by Richard Imaoka, a Scala developer
-                . You can find me on <a href="https://twitter.com/richardimaoka">twitter</a>,
-                and <a href="https://github.com/richardimaoka">github</a>.
+                リチャード 伊真岡です。<a href="https://twitter.com/richardimaokaJP">twitter</a>,
+                と <a href="https://github.com/richardimaoka">github</a> に生息しています.
               </p>
             </div>
           </>
