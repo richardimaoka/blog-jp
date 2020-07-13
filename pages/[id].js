@@ -11,6 +11,13 @@ export default function Post({ postData }) {
       <Head>
         <title>{postData.title}</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/agate.min.css"></link>
+        { postData.description &&
+          <meta name="og:description" content={postData.description} />
+        }
+        { postData.image &&
+          <meta name="og:image" content={postData.image} />
+        }
+        <meta name="og:title" content={postData.title} />
       </Head>
       <article>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>

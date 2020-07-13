@@ -10,6 +10,11 @@ export default function Home({ allPostsData }){
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
+        <meta
+          name="description"
+          content="リチャード 伊真岡のブログです"
+        />
+        <meta name="og:title" content={siteTitle} />
       </Head>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <ul className={utilStyles.list}>
