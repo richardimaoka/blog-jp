@@ -15,7 +15,7 @@ export default function Post({ postData }) {
           <meta name="og:description" content={postData.description} />
         }
         { postData.image &&
-          <meta name="og:image" content={postData.image} />
+          <meta name="og:image" content={"https://blog-jp.richardimaoka.net" + postData.image} />
         }
         <meta name="og:title" content={postData.title} />
         <meta name="twitter:card" content="summary_large_image" />
