@@ -18,6 +18,9 @@ export default function Post({ postData }) {
           <meta name="og:image" content={postData.image} />
         }
         <meta name="og:title" content={postData.title} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@RichardImaokaJP" />
+        <meta name="twitter:creator" content="@RichardImaokaJP" />
       </Head>
       <article>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
