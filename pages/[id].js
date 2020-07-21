@@ -22,6 +22,7 @@ export default function Post({ postData }) {
         <meta name="twitter:site" content="@RichardImaokaJP" />
         <meta name="twitter:creator" content="@RichardImaokaJP" />
         <script src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+        <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </Head>
       <article>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
