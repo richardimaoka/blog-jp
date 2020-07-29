@@ -35,3 +35,7 @@ blockquote {
   color: hsla(0,0%,0%,0.59);
   font-style: italic;
 }
+
+.greytext {
+  color: #898989;
+}
