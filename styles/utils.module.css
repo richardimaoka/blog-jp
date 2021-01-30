@@ -73,3 +73,14 @@
 .lightText {
   color: #999;
 }
+
+.youtube-iframe {
+  width: 560px;
+  height: 315px;
+}
+
+@media screen and (max-width: 560px) {
+  .youtube-iframe {
+    width: 100%;
+  }
+}
