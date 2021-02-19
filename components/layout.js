@@ -16,7 +16,8 @@ export default function Layout({ children, home }) {
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
                     
-                    gtag('config', 'UA-111892799-3');`
+                    gtag('config', 'UA-111892799-3');
+                    gtag('config', 'G-V96YTLL7K3');`
           }}
         />
         <script
