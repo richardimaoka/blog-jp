@@ -26,12 +26,13 @@ export default function Post({ postData }) {
       </Head>
       <article>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-        <div className={utilStyles.lightText}>
+        <div className={utilStyles.lightText + ' ' + utilStyles.articleSubheader}>
           <Date dateString={postData.date} />
+          <a href="https://twitter.com/richardimaokaJP">twitter:RichardImaokaJP</a>
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
-    </Layout>
+    </Layout >
   )
 }
 

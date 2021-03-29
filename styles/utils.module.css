@@ -84,3 +84,8 @@
     width: 100%;
   }
 }
+
+.articleSubheader {
+  display: flex;
+  justify-content: space-between; 
+}

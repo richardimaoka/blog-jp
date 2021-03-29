@@ -56,14 +56,14 @@ export default function Layout({ children, home }) {
             </div>
           </>
         ) : (
-            <>
-              <h2 className={utilStyles.headingLg}>
-                <Link href="/">
-                  <a className={utilStyles.colorInherit}>{siteTitle}</a>
-                </Link>
-              </h2>
-            </>
-          )}
+          <>
+            <h2 className={utilStyles.headingLg}>
+              <Link href="/">
+                <a className={utilStyles.colorInherit}>{siteTitle}</a>
+              </Link>
+            </h2>
+          </>
+        )}
       </header>
       <main>{children}</main>
       {
