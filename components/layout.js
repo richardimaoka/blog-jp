@@ -9,7 +9,10 @@ export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111892799-2"></script>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-111892799-2"
+        ></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `window.dataLayer = window.dataLayer || [];
@@ -17,7 +20,7 @@ export default function Layout({ children, home }) {
                     gtag('js', new Date());
                     
                     gtag('config', 'UA-111892799-3');
-                    gtag('config', 'G-V96YTLL7K3');`
+                    gtag('config', 'G-V96YTLL7K3', {'debug_mode': true}); `,
           }}
         />
         <script
@@ -31,11 +34,16 @@ export default function Layout({ children, home }) {
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
             fbq('init', '278854370347206');
-            fbq('track', 'PageView');`
+            fbq('track', 'PageView');`,
           }}
         />
         <noscript>
-          <img height="1" width="1" style={{ display: "none" }} src="https://www.facebook.com/tr?id=278854370347206&ev=PageView&noscript=1" />
+          <img
+            height="1"
+            width="1"
+            style={{ display: 'none' }}
+            src="https://www.facebook.com/tr?id=278854370347206&ev=PageView&noscript=1"
+          />
         </noscript>
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -50,8 +58,10 @@ export default function Layout({ children, home }) {
                 className={utilStyles.biopic}
               />
               <p className={utilStyles.biodesc}>
-                リチャード 伊真岡です。<a href="https://twitter.com/richardimaokaJP">twitter</a>,
-                と <a href="https://github.com/richardimaoka">github</a> に生息しています.
+                リチャード 伊真岡です。
+                <a href="https://twitter.com/richardimaokaJP">twitter</a>, と{' '}
+                <a href="https://github.com/richardimaoka">github</a>{' '}
+                に生息しています.
               </p>
             </div>
           </>
@@ -66,15 +76,13 @@ export default function Layout({ children, home }) {
         )}
       </header>
       <main>{children}</main>
-      {
-        !home && (
-          <div className={styles.backToHome}>
-            <Link href="/">
-              <a>← Back to home</a>
-            </Link>
-          </div>
-        )
-      }
-    </div >
+      {!home && (
+        <div className={styles.backToHome}>
+          <Link href="/">
+            <a>← Back to home</a>
+          </Link>
+        </div>
+      )}
+    </div>
   )
 }
